@@ -22,16 +22,11 @@ We will go in further detail throughout the tutorial.
 
 - [Anchors](#anchors)
 - [Quantifiers](#quantifiers)
-- [OR Operator](#or-operator)
 - [Character Escapes](#character-escapes)
 - [Character Classes](#character-classes)
-- [Flags](#flags)
 - [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
 - [Greedy and Lazy Match](#greedy-and-lazy-match)
-- [Boundaries](#boundaries)
-- [Back-references](#back-references)
-- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
 
 ## Regex Components
 The regex pattern must be wrapped in forward slashes (/), because they are considered literals. Take a look at the "Matching an email" regex's first and last character:
@@ -59,13 +54,11 @@ Some common quantifiers include:
 * +—Matches the pattern one or more times
 * ?—Matches the pattern zero or one time
 * {}—Curly brackets can provide three different ways to set limits for a match:
-* * { n }—Matches the pattern exactly n number of times
-* * { n, }—Matches the pattern at least n number of times
-* * { n, x }—Matches the pattern from a minimum of n number of times to a maximum of x number of times
+    * { n }—Matches the pattern exactly n number of times
+    * { n, }—Matches the pattern at least n number of times
+    * { n, x }—Matches the pattern from a minimum of n number of times to a maximum of x number of times
 
 In our email regex, the {2,6} is a quantifier located before the $ anchor. If we refer to the { n, x } structure, then the third bracket expression is limited to a range between 2 characters and 6 characters.
-
-### OR Operator
 
 ### Character Escapes
 The backslash (\) in a regex escapes specific characters that are usually used literally. For example, the character ([) is often used to begin a bracket expression, but if we put the backslash before it (\[), then the ([) is defined as a left bracket and escapes its use as the beginning of a bracket expression.
@@ -89,8 +82,6 @@ If we capitalize the letter for a character class, then the inverse of the crite
 
 In our email regex, our second string uses a \d to represent any numerical digit. If we interpret our second string, again
 
-### Flags
-
 ### Grouping and Capturing
 Grouping constructs break up sections of a regex using parantheses (()). Each section within the parentheses is referred to as a subexpression.
 
@@ -110,12 +101,7 @@ The hyphen (-) that we see from the previous example is often used between alpha
 ### Greedy and Lazy Match
 Quantifiers are commonly referred to as "greedy" expression, but they can be made greedy bu adding a ? symbol after it.
 
-### Boundaries
-
-### Back-references
-
-### Look-ahead and Look-behind
 
 ## Author
-
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Risvi Tareq
+GitHub: https://github.com/ivsir
