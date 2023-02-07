@@ -99,7 +99,9 @@ Take [bcde] or [b-e] for example. Strings such as "bed" "bcccde" or "decbee" mat
 The hyphen (-) that we see from the previous example is often used between alphanumeric characters (letters and numbers). The two bracket expressions in the example above are essentially calling for the same criteria.
 
 ### Greedy and Lazy Match
-Quantifiers are commonly referred to as "greedy" expression, but they can be made greedy bu adding a ? symbol after it.
+Quantifiers are commonly referred to as "greedy" expression. It is commonly referred to as greedy, because they want to match a certain amount of occurences of particular patterns as ppossible. 
+
+They can be made Lazy by adding a ? symbol after it as it will match as few occurences as possible. 
 
 
 ## Author
